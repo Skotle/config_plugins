@@ -1,0 +1,53 @@
+MossboundHuskDrops:
+  Drops:
+  - ROTTEN_FLESH 2-5 1
+  - WHEAT_SEEDS 1-3 0.45
+  - EMERALD 1 0.04
+
+MoonlitStrayDrops:
+  Drops:
+  - BONE 2-4 1
+  - ARROW 4-10 0.80
+  - SPECTRAL_ARROW 1-3 0.18
+
+BurrowSpiderDrops:
+  Drops:
+  - STRING 2-5 1
+  - SPIDER_EYE 1-2 0.60
+  - FERMENTED_SPIDER_EYE 1 0.08
+
+GrimCreeperDrops:
+  Drops:
+  - GUNPOWDER 3-7 1
+  - COAL 1-4 0.35
+  - TNT 1 0.05
+
+EmberImpDrops:
+  Drops:
+  - BLAZE_ROD 1-2 0.65
+  - BLAZE_POWDER 2-5 1
+  - FIRE_CHARGE 1-3 0.25
+
+AshenBruteDrops:
+  Drops:
+  - GOLD_NUGGET 8-18 1
+  - GOLD_INGOT 1-3 0.45
+  - NETHERITE_SCRAP 1 0.02
+
+MoltenSlimeDrops:
+  Drops:
+  - MAGMA_CREAM 2-5 1
+  - BASALT 2-8 0.60
+  - LAVA_BUCKET 1 0.03
+
+VoidWatcherDrops:
+  Drops:
+  - ENDER_PEARL 1-3 0.85
+  - CHORUS_FRUIT 1-4 0.35
+  - ECHO_SHARD 1 0.03
+
+EnderBulwarkDrops:
+  Drops:
+  - SHULKER_SHELL 1-2 0.60
+  - END_STONE 4-12 1
+  - DRAGON_BREATH 1 0.05

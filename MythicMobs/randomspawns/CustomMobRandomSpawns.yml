@@ -1,0 +1,68 @@
+MossboundHuskSpawn:
+  Type: MossboundHusk
+  Worlds: world
+  Chance: 0.035
+  Priority: 20
+  Action: REPLACE
+  Conditions:
+  - outside true
+
+MoonlitStraySpawn:
+  Type: MoonlitStray
+  Worlds: world
+  Chance: 0.030
+  Priority: 20
+  Action: REPLACE
+  Conditions:
+  - night true
+
+BurrowSpiderSpawn:
+  Type: BurrowSpider
+  Worlds: world
+  Chance: 0.030
+  Priority: 20
+  Action: REPLACE
+
+GrimCreeperSpawn:
+  Type: GrimCreeper
+  Worlds: world
+  Chance: 0.020
+  Priority: 20
+  Action: REPLACE
+  Conditions:
+  - night true
+
+EmberImpSpawn:
+  Type: EmberImp
+  Worlds: world_nether
+  Chance: 0.045
+  Priority: 20
+  Action: REPLACE
+
+AshenBruteSpawn:
+  Type: AshenBrute
+  Worlds: world_nether
+  Chance: 0.025
+  Priority: 20
+  Action: REPLACE
+
+MoltenSlimeSpawn:
+  Type: MoltenSlime
+  Worlds: world_nether
+  Chance: 0.035
+  Priority: 20
+  Action: REPLACE
+
+VoidWatcherSpawn:
+  Type: VoidWatcher
+  Worlds: world_the_end
+  Chance: 0.050
+  Priority: 20
+  Action: REPLACE
+
+EnderBulwarkSpawn:
+  Type: EnderBulwark
+  Worlds: world_the_end
+  Chance: 0.025
+  Priority: 20
+  Action: REPLACE

@@ -1,0 +1,145 @@
+MossboundHusk:
+  Type: HUSK
+  Display: '&2Mossbound Husk'
+  Health: 55
+  Damage: 8
+  Drops:
+  - MossboundHuskDrops
+  Options:
+    MovementSpeed: 0.27
+    FollowRange: 34
+    KnockbackResistance: 0.35
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=RootingBlow} @target ~onAttack 0.35
+  - skill{s=MossRegen} @self ~onTimer:120
+
+MoonlitStray:
+  Type: STRAY
+  Display: '&bMoonlit Stray'
+  Health: 38
+  Damage: 9
+  Drops:
+  - MoonlitStrayDrops
+  Equipment:
+  - BOW HAND
+  Options:
+    MovementSpeed: 0.25
+    FollowRange: 46
+    KnockbackResistance: 0.20
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=MoonlitArrow} @target ~onAttack 0.40
+
+BurrowSpider:
+  Type: SPIDER
+  Display: '&6Burrow Spider'
+  Health: 36
+  Damage: 7
+  Drops:
+  - BurrowSpiderDrops
+  Options:
+    MovementSpeed: 0.42
+    FollowRange: 32
+    KnockbackResistance: 0.25
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=BurrowVenom} @target ~onAttack 0.45
+  - skill{s=BurrowLeap} @target ~onTimer:80
+
+GrimCreeper:
+  Type: CREEPER
+  Display: '&8Grim Creeper'
+  Health: 42
+  Damage: 12
+  Drops:
+  - GrimCreeperDrops
+  Options:
+    MovementSpeed: 0.32
+    FollowRange: 34
+    ExplosionRadius: 6
+    KnockbackResistance: 0.15
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=GrimPressure} @self ~onCombat 0.45
+
+EmberImp:
+  Type: BLAZE
+  Display: '&cEmber Imp'
+  Health: 42
+  Damage: 8
+  Drops:
+  - EmberImpDrops
+  Options:
+    MovementSpeed: 0.28
+    FollowRange: 42
+    KnockbackResistance: 0.30
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=EmberBurst} @target ~onAttack 0.35
+  - skill{s=EmberShield} @self ~onDamaged 0.18
+
+AshenBrute:
+  Type: PIGLIN_BRUTE
+  Display: '&4Ashen Brute'
+  Health: 72
+  Damage: 13
+  Drops:
+  - AshenBruteDrops
+  Equipment:
+  - GOLDEN_AXE HAND
+  Options:
+    MovementSpeed: 0.30
+    FollowRange: 38
+    KnockbackResistance: 0.55
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=BruteRend} @target ~onAttack 0.35
+  - skill{s=BruteRage} @self ~onDamaged 0.12
+
+MoltenSlime:
+  Type: MAGMA_CUBE
+  Display: '&6Molten Slime'
+  Health: 64
+  Damage: 9
+  Drops:
+  - MoltenSlimeDrops
+  Options:
+    Size: 4
+    MovementSpeed: 0.25
+    FollowRange: 30
+    PreventSlimeSplit: true
+    KnockbackResistance: 0.45
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=MoltenPulse} @self ~onTimer:100
+
+VoidWatcher:
+  Type: ENDERMAN
+  Display: '&5Void Watcher'
+  Health: 78
+  Damage: 14
+  Drops:
+  - VoidWatcherDrops
+  Options:
+    MovementSpeed: 0.36
+    FollowRange: 52
+    KnockbackResistance: 0.50
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=VoidMark} @target ~onAttack 0.35
+  - skill{s=VoidBlink} @target ~onTimer:90
+
+EnderBulwark:
+  Type: SHULKER
+  Display: '&dEnder Bulwark'
+  Health: 95
+  Damage: 7
+  Drops:
+  - EnderBulwarkDrops
+  Options:
+    FollowRange: 36
+    KnockbackResistance: 1
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=BulwarkCurse} @PlayersInRadius{r=12} ~onTimer:120

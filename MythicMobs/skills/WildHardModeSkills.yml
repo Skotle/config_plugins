@@ -1,0 +1,48 @@
+WildCripple:
+  Cooldown: 3
+  Skills:
+  - potion{type=SLOW;lvl=1;duration=60} @target
+  - potion{type=WEAKNESS;lvl=1;duration=60} @target
+
+WildCallHelp:
+  Cooldown: 18
+  Skills:
+  - summon{mob=WildFeralZombie;amount=1;noise=5} @Self
+
+WildBoneShot:
+  Cooldown: 4
+  Skills:
+  - potion{type=SLOW;lvl=1;duration=50} @target
+  - damage{amount=2;ignorearmor=false} @target
+
+WildVenomBite:
+  Cooldown: 4
+  Skills:
+  - potion{type=POISON;lvl=1;duration=100} @target
+  - potion{type=SLOW;lvl=1;duration=40} @target
+
+WildWebPulse:
+  Cooldown: 8
+  Skills:
+  - potion{type=SLOW;lvl=2;duration=50} @PlayersInRadius{r=5}
+  - effect:particles{p=cloud;amount=80;hSpread=3;ySpread=1;speed=0;yOffset=0.4} @Self
+
+WildCreeperPressure:
+  Cooldown: 6
+  Skills:
+  - potion{type=BLINDNESS;lvl=1;duration=35} @PlayersInRadius{r=6}
+  - potion{type=SLOW;lvl=1;duration=35} @PlayersInRadius{r=6}
+  - effect:particles{p=smoke;amount=80;hSpread=3;ySpread=1;speed=0;yOffset=0.5} @Self
+
+WildHexCloud:
+  Cooldown: 10
+  Skills:
+  - potion{type=POISON;lvl=1;duration=80} @PlayersInRadius{r=8}
+  - potion{type=WEAKNESS;lvl=1;duration=100} @PlayersInRadius{r=8}
+  - effect:particles{p=witch;amount=120;hSpread=5;ySpread=1;speed=0;yOffset=0.7} @Self
+
+WildStalkerPunish:
+  Cooldown: 5
+  Skills:
+  - damage{amount=4;ignorearmor=true} @target
+  - potion{type=DARKNESS;lvl=1;duration=45} @target

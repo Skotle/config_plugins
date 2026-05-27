@@ -1,0 +1,84 @@
+WildFeralZombie:
+  Type: ZOMBIE
+  Display: '&2Feral Zombie'
+  Health: 42
+  Damage: 7
+  Equipment:
+  - IRON_SWORD HAND
+  Options:
+    MovementSpeed: 0.32
+    FollowRange: 36
+    KnockbackResistance: 0.25
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=WildCripple} @target ~onAttack 0.35
+  - skill{s=WildCallHelp} @self ~onDamaged 0.08
+
+WildGraveSkeleton:
+  Type: SKELETON
+  Display: '&7Grave Archer'
+  Health: 34
+  Damage: 8
+  Equipment:
+  - BOW HAND
+  - CHAINMAIL_HELMET HEAD
+  Options:
+    MovementSpeed: 0.26
+    FollowRange: 42
+    KnockbackResistance: 0.15
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=WildBoneShot} @target ~onAttack 0.30
+
+WildVenomSpider:
+  Type: SPIDER
+  Display: '&aVenom Spider'
+  Health: 30
+  Damage: 6
+  Options:
+    MovementSpeed: 0.38
+    FollowRange: 32
+    KnockbackResistance: 0.15
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=WildVenomBite} @target ~onAttack 0.45
+  - skill{s=WildWebPulse} @self ~onTimer:100
+
+WildAshCreeper:
+  Type: CREEPER
+  Display: '&8Ash Creeper'
+  Health: 32
+  Damage: 10
+  Options:
+    MovementSpeed: 0.30
+    FollowRange: 30
+    ExplosionRadius: 5
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=WildCreeperPressure} @self ~onCombat 0.45
+
+WildHexWitch:
+  Type: WITCH
+  Display: '&5Hex Witch'
+  Health: 46
+  Damage: 5
+  Options:
+    MovementSpeed: 0.24
+    FollowRange: 36
+    KnockbackResistance: 0.35
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=WildHexCloud} @self ~onTimer:120
+
+WildStalkerEnderman:
+  Type: ENDERMAN
+  Display: '&5Stalker Enderman'
+  Health: 58
+  Damage: 11
+  Options:
+    MovementSpeed: 0.34
+    FollowRange: 48
+    KnockbackResistance: 0.45
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=WildStalkerPunish} @target ~onAttack 0.30

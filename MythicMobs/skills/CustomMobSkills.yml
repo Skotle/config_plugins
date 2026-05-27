@@ -1,0 +1,94 @@
+RootingBlow:
+  Cooldown: 5
+  Skills:
+  - potion{type=SLOW;lvl=2;duration=60} @target
+  - effect:particles{p=block_crack;m=OAK_LEAVES;amount=60;hSpread=1;ySpread=1;speed=0} @target
+
+MossRegen:
+  Cooldown: 8
+  Skills:
+  - heal{amount=5} @self
+  - effect:particles{p=happyVillager;amount=40;hSpread=1;ySpread=1;speed=0} @self
+
+MoonlitArrow:
+  Cooldown: 4
+  Skills:
+  - potion{type=GLOWING;lvl=1;duration=100} @target
+  - potion{type=SLOW;lvl=1;duration=50} @target
+  - damage{amount=2;ignorearmor=false} @target
+
+BurrowVenom:
+  Cooldown: 4
+  Skills:
+  - potion{type=POISON;lvl=1;duration=100} @target
+  - potion{type=HUNGER;lvl=1;duration=80} @target
+
+BurrowLeap:
+  Cooldown: 6
+  Conditions:
+  - targetwithin{d=16}
+  Skills:
+  - leap{velocity=180} @target
+  - effect:particles{p=crit;amount=35;hSpread=1;ySpread=1;speed=0.1} @self
+
+GrimPressure:
+  Cooldown: 6
+  Skills:
+  - potion{type=BLINDNESS;lvl=1;duration=35} @PlayersInRadius{r=7}
+  - potion{type=SLOW;lvl=1;duration=35} @PlayersInRadius{r=7}
+  - effect:particles{p=smoke;amount=90;hSpread=4;ySpread=1;speed=0} @self
+
+EmberBurst:
+  Cooldown: 5
+  Skills:
+  - ignite{ticks=80} @target
+  - damage{amount=3;ignorearmor=false} @target
+  - effect:particles{p=flame;amount=70;hSpread=1;ySpread=1;speed=0.05} @target
+
+EmberShield:
+  Cooldown: 10
+  Skills:
+  - potion{type=FIRE_RESISTANCE;lvl=1;duration=120} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=60} @self
+  - effect:particles{p=lava;amount=30;hSpread=1;ySpread=1;speed=0} @self
+
+BruteRend:
+  Cooldown: 5
+  Skills:
+  - damage{amount=4;ignorearmor=true} @target
+  - potion{type=WEAKNESS;lvl=1;duration=80} @target
+
+BruteRage:
+  Cooldown: 12
+  Skills:
+  - potion{type=INCREASE_DAMAGE;lvl=1;duration=100} @self
+  - potion{type=SPEED;lvl=1;duration=100} @self
+  - effect:particles{p=angryVillager;amount=35;hSpread=1;ySpread=1;speed=0} @self
+
+MoltenPulse:
+  Cooldown: 8
+  Skills:
+  - ignite{ticks=60} @PlayersInRadius{r=5}
+  - damage{amount=3;ignorearmor=false} @PlayersInRadius{r=5}
+  - effect:particles{p=lava;amount=45;hSpread=3;ySpread=1;speed=0} @self
+
+VoidMark:
+  Cooldown: 6
+  Skills:
+  - potion{type=DARKNESS;lvl=1;duration=50} @target
+  - damage{amount=4;ignorearmor=true} @target
+
+VoidBlink:
+  Cooldown: 7
+  Conditions:
+  - targetwithin{d=24}
+  Skills:
+  - teleport @target
+  - effect:sound{s=entity.enderman.teleport;volume=1.0;pitch=0.7} @self
+
+BulwarkCurse:
+  Cooldown: 10
+  Skills:
+  - potion{type=LEVITATION;lvl=1;duration=35}
+  - potion{type=SLOW_FALLING;lvl=1;duration=80}
+  - effect:particles{p=dragon_breath;amount=80;hSpread=5;ySpread=2;speed=0} @self
