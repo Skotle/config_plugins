@@ -92,3 +92,168 @@ BulwarkCurse:
   - potion{type=LEVITATION;lvl=1;duration=35}
   - potion{type=SLOW_FALLING;lvl=1;duration=80}
   - effect:particles{p=dragon_breath;amount=80;hSpread=5;ySpread=2;speed=0} @self
+
+DreadWarlordSpawn:
+  Cooldown: 1
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
+  - potion{type=INCREASE_DAMAGE;lvl=1;duration=999999} @self
+  - potion{type=SPEED;lvl=1;duration=999999} @self
+  - summon{mob=WildFeralZombie;amount=2;noise=5} @self
+  - summon{mob=WildGraveSkeleton;amount=1;noise=6} @self
+  - summon{mob=WildVenomSpider;amount=1;noise=6} @self
+  - effect:sound{s=entity.wither.spawn;volume=0.7;pitch=0.8} @self
+  - effect:particles{p=large_smoke;amount=140;hSpread=4;ySpread=2;speed=0.02} @self
+
+DreadWarlordGuard:
+  Cooldown: 18
+  Skills:
+  - summon{mob=WildFeralZombie;amount=1;noise=5} @self
+  - summon{mob=WildGraveSkeleton;amount=1;noise=6} @self
+  - effect:particles{p=angryVillager;amount=45;hSpread=2;ySpread=1;speed=0} @self
+
+DreadWarlordCleave:
+  Cooldown: 5
+  Skills:
+  - damage{amount=6;ignorearmor=false} @PlayersInRadius{r=4}
+  - potion{type=WEAKNESS;lvl=1;duration=80} @PlayersInRadius{r=4}
+  - potion{type=SLOW;lvl=1;duration=50} @target
+  - effect:particles{p=crit;amount=70;hSpread=2;ySpread=1;speed=0.1} @self
+
+DreadWarlordRally:
+  Cooldown: 14
+  Skills:
+  - potion{type=INCREASE_DAMAGE;lvl=1;duration=120} @MobsInRadius{r=12;t=WildFeralZombie,WildGraveSkeleton,WildVenomSpider}
+  - potion{type=SPEED;lvl=1;duration=120} @MobsInRadius{r=12;t=WildFeralZombie,WildGraveSkeleton,WildVenomSpider}
+  - heal{amount=8} @self
+  - effect:sound{s=entity.zombie.ambient;volume=1.0;pitch=0.45} @self
+
+PlagueRevenantSpawn:
+  Cooldown: 1
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
+  - potion{type=SPEED;lvl=1;duration=999999} @self
+  - summon{mob=WildFeralZombie;amount=2;noise=7} @self
+  - summon{mob=MossboundHusk;amount=1;noise=8} @self
+  - effect:sound{s=entity.zombie_villager.cure;volume=0.9;pitch=0.45} @self
+  - effect:particles{p=spore_blossom_air;amount=160;hSpread=5;ySpread=2;speed=0.02} @self
+
+PlagueMiasma:
+  Cooldown: 8
+  Skills:
+  - potion{type=POISON;lvl=2;duration=120} @PlayersInRadius{r=9}
+  - potion{type=HUNGER;lvl=2;duration=160} @PlayersInRadius{r=9}
+  - potion{type=WEAKNESS;lvl=1;duration=120} @PlayersInRadius{r=9}
+  - effect:particles{p=witch;amount=130;hSpread=6;ySpread=1;speed=0.02} @self
+
+PlagueRend:
+  Cooldown: 5
+  Skills:
+  - damage{amount=8;ignorearmor=true} @target
+  - potion{type=WITHER;lvl=1;duration=90} @target
+  - potion{type=SLOW;lvl=2;duration=70} @target
+
+PlagueRaiseDead:
+  Cooldown: 18
+  Skills:
+  - summon{mob=WildFeralZombie;amount=2;noise=7} @self
+  - heal{amount=12} @self
+  - effect:sound{s=entity.zombie_villager.ambient;volume=1.1;pitch=0.6} @self
+
+CinderColossusSpawn:
+  Cooldown: 1
+  Skills:
+  - potion{type=FIRE_RESISTANCE;lvl=1;duration=999999} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
+  - potion{type=INCREASE_DAMAGE;lvl=1;duration=999999} @self
+  - summon{mob=EmberImp;amount=2;noise=8} @self
+  - effect:sound{s=entity.blaze.shoot;volume=1.2;pitch=0.55} @self
+  - effect:particles{p=lava;amount=90;hSpread=5;ySpread=2;speed=0} @self
+
+CinderShockwave:
+  Cooldown: 9
+  Skills:
+  - ignite{ticks=120} @PlayersInRadius{r=8}
+  - damage{amount=7;ignorearmor=false} @PlayersInRadius{r=8}
+  - potion{type=SLOW;lvl=2;duration=70} @PlayersInRadius{r=8}
+  - effect:particles{p=flame;amount=170;hSpread=6;ySpread=1;speed=0.05} @self
+
+CinderExecution:
+  Cooldown: 6
+  Skills:
+  - damage{amount=10;ignorearmor=true} @target
+  - ignite{ticks=100} @target
+  - potion{type=WEAKNESS;lvl=1;duration=80} @target
+
+CinderFury:
+  Cooldown: 16
+  Skills:
+  - potion{type=INCREASE_DAMAGE;lvl=2;duration=100} @self
+  - potion{type=SPEED;lvl=1;duration=100} @self
+  - summon{mob=MoltenSlime;amount=1;noise=7} @self
+  - effect:sound{s=entity.piglin_brute.angry;volume=1.2;pitch=0.6} @self
+
+VoidHarbingerSpawn:
+  Cooldown: 1
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
+  - potion{type=SPEED;lvl=2;duration=999999} @self
+  - summon{mob=VoidWatcher;amount=2;noise=8} @self
+  - effect:sound{s=entity.enderman.scream;volume=1.0;pitch=0.6} @self
+  - effect:particles{p=portal;amount=220;hSpread=6;ySpread=3;speed=0.08} @self
+
+VoidCollapse:
+  Cooldown: 8
+  Skills:
+  - potion{type=DARKNESS;lvl=1;duration=90}
+  - potion{type=SLOW;lvl=2;duration=70}
+  - potion{type=WEAKNESS;lvl=1;duration=90}
+  - damage{amount=6;ignorearmor=true}
+  - effect:particles{p=dragon_breath;amount=120;hSpread=6;ySpread=2;speed=0.03} @self
+
+VoidSunder:
+  Cooldown: 5
+  Skills:
+  - damage{amount=9;ignorearmor=true} @target
+  - potion{type=SLOW_DIGGING;lvl=2;duration=100} @target
+  - potion{type=CONFUSION;lvl=1;duration=120} @target
+
+VoidSummonWatchers:
+  Cooldown: 20
+  Skills:
+  - summon{mob=VoidWatcher;amount=1;noise=8} @self
+  - heal{amount=10} @self
+  - effect:sound{s=entity.enderman.teleport;volume=1.0;pitch=0.55} @self
+
+GraveboundTitanSpawn:
+  Cooldown: 1
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;lvl=3;duration=999999} @self
+  - potion{type=INCREASE_DAMAGE;lvl=1;duration=999999} @self
+  - summon{mob=WildGraveSkeleton;amount=2;noise=8} @self
+  - summon{mob=WildFeralZombie;amount=2;noise=8} @self
+  - effect:sound{s=entity.warden.roar;volume=0.8;pitch=0.55} @self
+  - effect:particles{p=large_smoke;amount=220;hSpread=6;ySpread=3;speed=0.02} @self
+
+GraveQuake:
+  Cooldown: 10
+  Skills:
+  - damage{amount=8;ignorearmor=false} @PlayersInRadius{r=9}
+  - potion{type=SLOW;lvl=3;duration=70} @PlayersInRadius{r=9}
+  - potion{type=WEAKNESS;lvl=1;duration=90} @PlayersInRadius{r=9}
+  - effect:sound{s=entity.generic.explode;volume=0.7;pitch=0.65} @self
+  - effect:particles{p=block_crack;m=DEEPSLATE;amount=180;hSpread=7;ySpread=1;speed=0.02} @self
+
+TitanBreaker:
+  Cooldown: 6
+  Skills:
+  - damage{amount=12;ignorearmor=true} @target
+  - potion{type=SLOW;lvl=2;duration=90} @target
+  - potion{type=WEAKNESS;lvl=2;duration=90} @target
+
+GraveboundRecover:
+  Cooldown: 18
+  Skills:
+  - heal{amount=18} @self
+  - summon{mob=WildGraveSkeleton;amount=1;noise=7} @self
+  - effect:particles{p=soul;amount=100;hSpread=4;ySpread=2;speed=0.02} @self

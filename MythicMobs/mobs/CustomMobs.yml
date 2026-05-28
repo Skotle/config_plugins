@@ -143,3 +143,125 @@ EnderBulwark:
     PreventOtherDrops: false
   Skills:
   - skill{s=BulwarkCurse} @PlayersInRadius{r=12} ~onTimer:120
+
+DreadWarlord:
+  Type: ZOMBIE
+  Display: '&4Dread Warlord'
+  Health: 220
+  Damage: 18
+  Drops:
+  - DreadWarlordDrops
+  Equipment:
+  - NETHERITE_SWORD HAND
+  - NETHERITE_HELMET HEAD
+  - NETHERITE_CHESTPLATE CHEST
+  - NETHERITE_LEGGINGS LEGS
+  - NETHERITE_BOOTS FEET
+  Options:
+    MovementSpeed: 0.36
+    FollowRange: 56
+    KnockbackResistance: 0.80
+    PreventOtherDrops: false
+    PreventSunburn: true
+  Skills:
+  - skill{s=DreadWarlordSpawn} @self ~onSpawn
+  - skill{s=DreadWarlordGuard} @self ~onTimer:160
+  - skill{s=DreadWarlordCleave} @target ~onAttack 0.45
+  - skill{s=DreadWarlordRally} @self ~onDamaged 0.15
+  - skill{s=MobArmorShred} @target ~onAttack 0.22
+
+PlagueRevenant:
+  Type: HUSK
+  Display: '&2Plague Revenant'
+  Health: 280
+  Damage: 20
+  Drops:
+  - PlagueRevenantDrops
+  Equipment:
+  - IRON_AXE HAND
+  - CHAINMAIL_HELMET HEAD
+  - IRON_CHESTPLATE CHEST
+  - CHAINMAIL_LEGGINGS LEGS
+  - IRON_BOOTS FEET
+  Options:
+    MovementSpeed: 0.34
+    FollowRange: 58
+    KnockbackResistance: 0.85
+    PreventOtherDrops: false
+    PreventSunburn: true
+  Skills:
+  - skill{s=PlagueRevenantSpawn} @self ~onSpawn
+  - skill{s=PlagueMiasma} @self ~onTimer:90
+  - skill{s=PlagueRend} @target ~onAttack 0.50
+  - skill{s=PlagueRaiseDead} @self ~onDamaged 0.10
+  - skill{s=MobCullTheWeak} @target ~onAttack 0.18
+
+CinderColossus:
+  Type: PIGLIN_BRUTE
+  Display: '&cCinder Colossus'
+  Health: 340
+  Damage: 24
+  Drops:
+  - CinderColossusDrops
+  Equipment:
+  - NETHERITE_AXE HAND
+  - GOLDEN_HELMET HEAD
+  - NETHERITE_CHESTPLATE CHEST
+  - GOLDEN_LEGGINGS LEGS
+  - NETHERITE_BOOTS FEET
+  Options:
+    MovementSpeed: 0.31
+    FollowRange: 54
+    KnockbackResistance: 0.95
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=CinderColossusSpawn} @self ~onSpawn
+  - skill{s=CinderShockwave} @self ~onTimer:100
+  - skill{s=CinderExecution} @target ~onAttack 0.45
+  - skill{s=CinderFury} @self ~onDamaged 0.12
+  - skill{s=MobArmorShred} @target ~onAttack 0.18
+
+VoidHarbinger:
+  Type: ENDERMAN
+  Display: '&5Void Harbinger'
+  Health: 300
+  Damage: 22
+  Drops:
+  - VoidHarbingerDrops
+  Options:
+    MovementSpeed: 0.40
+    FollowRange: 64
+    KnockbackResistance: 0.80
+    PreventOtherDrops: false
+  Skills:
+  - skill{s=VoidHarbingerSpawn} @self ~onSpawn
+  - skill{s=VoidCollapse} @PlayersInRadius{r=10} ~onTimer:100
+  - skill{s=VoidSunder} @target ~onAttack 0.48
+  - skill{s=VoidSummonWatchers} @self ~onDamaged 0.10
+  - skill{s=MobRiftSnare} @self ~onTimer:120
+
+GraveboundTitan:
+  Type: ZOMBIE
+  Display: '&8Gravebound Titan'
+  Health: 420
+  Damage: 26
+  Drops:
+  - GraveboundTitanDrops
+  Equipment:
+  - NETHERITE_SWORD HAND
+  - DIAMOND_HELMET HEAD
+  - DIAMOND_CHESTPLATE CHEST
+  - DIAMOND_LEGGINGS LEGS
+  - DIAMOND_BOOTS FEET
+  Options:
+    MovementSpeed: 0.28
+    FollowRange: 60
+    KnockbackResistance: 1.0
+    PreventOtherDrops: false
+    PreventSunburn: true
+  Skills:
+  - skill{s=GraveboundTitanSpawn} @self ~onSpawn
+  - skill{s=GraveQuake} @self ~onTimer:110
+  - skill{s=TitanBreaker} @target ~onAttack 0.42
+  - skill{s=GraveboundRecover} @self ~onDamaged 0.08
+  - skill{s=MobGrudgeBarrier} @self ~onDamaged 0.10

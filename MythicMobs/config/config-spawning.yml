@@ -5,17 +5,17 @@ Configuration:
     DisableVanillaSpawns: false
     GenerateSpawnPoints: false
     SpawnRadiusPerPlayer: 64
-    SpawnRadiusPerPlayerMin: 12
+    SpawnRadiusPerPlayerMin: 18
     SpawnRadiusPerPlayerY: 16
     PlayerClusterDistance: 24.0
-    LimitMultiplier: 1.2
-    LocalGroupMultiplier: 0.1
+    LimitMultiplier: 1.1
+    LocalGroupMultiplier: 0.12
     SpawningLimit: -1
-    LocalSpawningLimit: -1
+    LocalSpawningLimit: 36
     IgnoreVanillaMobs: false
     IgnoreUnnaturalMobs: false
     ReplaceObeysCap: false
     SharedCooldown: true
-    MaxGenerationAttempts: 10
+    MaxGenerationAttempts: 9
     Generator: NONE
     MaxGenerationTime: 5

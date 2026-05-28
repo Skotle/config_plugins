@@ -1,0 +1,77 @@
+StormAegis:
+  Id: SHIELD
+  Display: '&bStorm Aegis'
+  Lore:
+  - '&7Right-click to trigger Aegis Pulse.'
+  - '&8Cooldown: 28s'
+  Enchantments:
+  - DURABILITY:3
+  Hide:
+  - ENCHANTS
+  - ATTRIBUTES
+  Attributes:
+    OffHand:
+      Health: 4
+      KnockbackResistance: 0.08
+  Skills:
+  - skill{s=PlayerAegisPulse} @self ~onUse
+
+CinderDashBlade:
+  Id: DIAMOND_SWORD
+  Display: '&cCinder Dash Blade'
+  Lore:
+  - '&7Right-click to burst through nearby mobs.'
+  - '&8Cooldown: 22s'
+  Enchantments:
+  - DAMAGE_ALL:3
+  - FIRE_ASPECT:1
+  Hide:
+  - ATTRIBUTES
+  Attributes:
+    MainHand:
+      AttackDamage: 2
+      MovementSpeed: 0.03
+  Skills:
+  - skill{s=PlayerCinderStep} @self ~onUse
+
+GravehookAxe:
+  Id: IRON_AXE
+  Display: '&8Gravehook Axe'
+  Lore:
+  - '&7Right-click a target to cripple it.'
+  - '&8Cooldown: 18s'
+  Enchantments:
+  - DAMAGE_ALL:2
+  Hide:
+  - ATTRIBUTES
+  Attributes:
+    MainHand:
+      AttackDamage: 3
+  Skills:
+  - skill{s=PlayerGraveHook} @target ~onUse
+
+VoidstepPearl:
+  Id: ENDER_PEARL
+  Display: '&5Voidstep Pearl'
+  Lore:
+  - '&7Right-click to phase and rupture nearby mobs.'
+  - '&8Cooldown: 34s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerVoidFlash} @self ~onUse
+
+PlagueWardenCharm:
+  Id: ECHO_SHARD
+  Display: '&2Plague Warden Charm'
+  Lore:
+  - '&7Right-click to heal and poison nearby mobs.'
+  - '&8Cooldown: 26s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerPlagueWard} @self ~onUse

@@ -1,84 +1,100 @@
 WildFeralZombie:
   Type: ZOMBIE
-  Display: '&2Feral Zombie'
-  Health: 42
-  Damage: 7
+  Display: '&2Starved Feral Zombie'
+  Health: 58
+  Damage: 10
   Equipment:
   - IRON_SWORD HAND
+  - CHAINMAIL_CHESTPLATE CHEST
   Options:
-    MovementSpeed: 0.32
-    FollowRange: 36
-    KnockbackResistance: 0.25
+    MovementSpeed: 0.35
+    FollowRange: 42
+    KnockbackResistance: 0.40
     PreventOtherDrops: false
+    PreventSunburn: true
   Skills:
-  - skill{s=WildCripple} @target ~onAttack 0.35
-  - skill{s=WildCallHelp} @self ~onDamaged 0.08
+  - skill{s=WildCripple} @target ~onAttack 0.45
+  - skill{s=WildCallHelp} @self ~onDamaged 0.14
+  - skill{s=WildBloodScent} @self ~onTimer:140
+  - skill{s=MobPackHowl} @self ~onDamaged 0.08
 
 WildGraveSkeleton:
   Type: SKELETON
-  Display: '&7Grave Archer'
-  Health: 34
-  Damage: 8
+  Display: '&7Grave Marksman'
+  Health: 46
+  Damage: 11
   Equipment:
   - BOW HAND
   - CHAINMAIL_HELMET HEAD
+  - CHAINMAIL_BOOTS FEET
   Options:
-    MovementSpeed: 0.26
-    FollowRange: 42
-    KnockbackResistance: 0.15
+    MovementSpeed: 0.29
+    FollowRange: 50
+    KnockbackResistance: 0.25
     PreventOtherDrops: false
+    PreventSunburn: true
   Skills:
-  - skill{s=WildBoneShot} @target ~onAttack 0.30
+  - skill{s=WildBoneShot} @target ~onAttack 0.42
+  - skill{s=WildGraveVolley} @target ~onTimer:100 0.60
+  - skill{s=MobDoomMark} @target ~onAttack 0.12
 
 WildVenomSpider:
   Type: SPIDER
   Display: '&aVenom Spider'
-  Health: 30
-  Damage: 6
+  Health: 44
+  Damage: 9
   Options:
-    MovementSpeed: 0.38
-    FollowRange: 32
-    KnockbackResistance: 0.15
+    MovementSpeed: 0.43
+    FollowRange: 38
+    KnockbackResistance: 0.25
     PreventOtherDrops: false
   Skills:
-  - skill{s=WildVenomBite} @target ~onAttack 0.45
-  - skill{s=WildWebPulse} @self ~onTimer:100
+  - skill{s=WildVenomBite} @target ~onAttack 0.55
+  - skill{s=WildWebPulse} @self ~onTimer:80
+  - skill{s=WildSkitterSplit} @self ~onDamaged 0.10
+  - skill{s=MobCullTheWeak} @target ~onAttack 0.10
 
 WildAshCreeper:
   Type: CREEPER
   Display: '&8Ash Creeper'
-  Health: 32
-  Damage: 10
+  Health: 44
+  Damage: 14
   Options:
-    MovementSpeed: 0.30
+    MovementSpeed: 0.33
     FollowRange: 30
-    ExplosionRadius: 5
+    ExplosionRadius: 6
     PreventOtherDrops: false
   Skills:
-  - skill{s=WildCreeperPressure} @self ~onCombat 0.45
+  - skill{s=WildCreeperPressure} @self ~onCombat 0.65
+  - skill{s=WildFusePanic} @self ~onDamaged 0.18
 
 WildHexWitch:
   Type: WITCH
-  Display: '&5Hex Witch'
-  Health: 46
-  Damage: 5
+  Display: '&5Hex Matron'
+  Health: 66
+  Damage: 8
   Options:
-    MovementSpeed: 0.24
-    FollowRange: 36
-    KnockbackResistance: 0.35
+    MovementSpeed: 0.28
+    FollowRange: 44
+    KnockbackResistance: 0.50
     PreventOtherDrops: false
   Skills:
-  - skill{s=WildHexCloud} @self ~onTimer:120
+  - skill{s=WildHexCloud} @self ~onTimer:90
+  - skill{s=WildCurseDebt} @target ~onAttack 0.35
+  - skill{s=WildWitchRetreat} @self ~onDamaged 0.12
+  - skill{s=MobGrudgeBarrier} @self ~onDamaged 0.10
 
 WildStalkerEnderman:
   Type: ENDERMAN
   Display: '&5Stalker Enderman'
-  Health: 58
-  Damage: 11
+  Health: 82
+  Damage: 15
   Options:
-    MovementSpeed: 0.34
-    FollowRange: 48
-    KnockbackResistance: 0.45
+    MovementSpeed: 0.38
+    FollowRange: 58
+    KnockbackResistance: 0.60
     PreventOtherDrops: false
   Skills:
-  - skill{s=WildStalkerPunish} @target ~onAttack 0.30
+  - skill{s=WildStalkerPunish} @target ~onAttack 0.42
+  - skill{s=WildVoidAnchor} @PlayersInRadius{r=7} ~onTimer:110
+  - skill{s=MobRiftSnare} @self ~onTimer:140

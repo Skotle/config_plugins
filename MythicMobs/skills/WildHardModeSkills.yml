@@ -1,48 +1,103 @@
 WildCripple:
   Cooldown: 3
   Skills:
-  - potion{type=SLOW;lvl=1;duration=60} @target
-  - potion{type=WEAKNESS;lvl=1;duration=60} @target
+  - potion{type=SLOW;lvl=2;duration=70} @target
+  - potion{type=WEAKNESS;lvl=1;duration=90} @target
+  - damage{amount=2;ignorearmor=false} @target
 
 WildCallHelp:
-  Cooldown: 18
+  Cooldown: 14
   Skills:
-  - summon{mob=WildFeralZombie;amount=1;noise=5} @Self
+  - summon{mob=WildFeralZombie;amount=2;noise=6} @Self
+  - effect:sound{s=entity.zombie_villager.converted;volume=0.8;pitch=0.7} @Self
+
+WildBloodScent:
+  Cooldown: 10
+  Skills:
+  - potion{type=SPEED;lvl=1;duration=80} @MobsInRadius{r=10;t=WildFeralZombie,WildVenomSpider}
+  - effect:particles{p=damage_indicator;amount=20;hSpread=2;ySpread=1;speed=0.02} @Self
 
 WildBoneShot:
-  Cooldown: 4
+  Cooldown: 3
   Skills:
+  - potion{type=SLOW;lvl=2;duration=60} @target
+  - potion{type=GLOWING;lvl=1;duration=80} @target
+  - damage{amount=4;ignorearmor=false} @target
+
+WildGraveVolley:
+  Cooldown: 7
+  Skills:
+  - damage{amount=5;ignorearmor=false} @target
   - potion{type=SLOW;lvl=1;duration=50} @target
-  - damage{amount=2;ignorearmor=false} @target
+  - potion{type=WEAKNESS;lvl=1;duration=50} @target
+  - effect:sound{s=entity.skeleton.shoot;volume=1.0;pitch=0.8} @Self
 
 WildVenomBite:
   Cooldown: 4
   Skills:
-  - potion{type=POISON;lvl=1;duration=100} @target
-  - potion{type=SLOW;lvl=1;duration=40} @target
+  - potion{type=POISON;lvl=2;duration=120} @target
+  - potion{type=SLOW;lvl=1;duration=70} @target
+  - potion{type=HUNGER;lvl=1;duration=120} @target
 
 WildWebPulse:
-  Cooldown: 8
+  Cooldown: 7
   Skills:
-  - potion{type=SLOW;lvl=2;duration=50} @PlayersInRadius{r=5}
-  - effect:particles{p=cloud;amount=80;hSpread=3;ySpread=1;speed=0;yOffset=0.4} @Self
+  - potion{type=SLOW;lvl=3;duration=55} @PlayersInRadius{r=6}
+  - potion{type=WEAKNESS;lvl=1;duration=55} @PlayersInRadius{r=6}
+  - effect:particles{p=cloud;amount=110;hSpread=4;ySpread=1;speed=0;yOffset=0.4} @Self
+
+WildSkitterSplit:
+  Cooldown: 18
+  Skills:
+  - summon{mob=WildVenomSpider;amount=1;noise=4} @Self
+  - potion{type=SPEED;lvl=2;duration=80} @Self
 
 WildCreeperPressure:
-  Cooldown: 6
-  Skills:
-  - potion{type=BLINDNESS;lvl=1;duration=35} @PlayersInRadius{r=6}
-  - potion{type=SLOW;lvl=1;duration=35} @PlayersInRadius{r=6}
-  - effect:particles{p=smoke;amount=80;hSpread=3;ySpread=1;speed=0;yOffset=0.5} @Self
-
-WildHexCloud:
-  Cooldown: 10
-  Skills:
-  - potion{type=POISON;lvl=1;duration=80} @PlayersInRadius{r=8}
-  - potion{type=WEAKNESS;lvl=1;duration=100} @PlayersInRadius{r=8}
-  - effect:particles{p=witch;amount=120;hSpread=5;ySpread=1;speed=0;yOffset=0.7} @Self
-
-WildStalkerPunish:
   Cooldown: 5
   Skills:
-  - damage{amount=4;ignorearmor=true} @target
-  - potion{type=DARKNESS;lvl=1;duration=45} @target
+  - potion{type=BLINDNESS;lvl=1;duration=45} @PlayersInRadius{r=7}
+  - potion{type=SLOW;lvl=2;duration=45} @PlayersInRadius{r=7}
+  - potion{type=WEAKNESS;lvl=1;duration=45} @PlayersInRadius{r=7}
+  - effect:particles{p=smoke;amount=120;hSpread=4;ySpread=1;speed=0;yOffset=0.5} @Self
+
+WildFusePanic:
+  Cooldown: 8
+  Skills:
+  - potion{type=SPEED;lvl=2;duration=60} @Self
+  - damage{amount=3;ignorearmor=true} @PlayersInRadius{r=4}
+  - effect:sound{s=entity.creeper.primed;volume=1.2;pitch=1.4} @Self
+
+WildHexCloud:
+  Cooldown: 8
+  Skills:
+  - potion{type=POISON;lvl=1;duration=120} @PlayersInRadius{r=9}
+  - potion{type=WEAKNESS;lvl=2;duration=120} @PlayersInRadius{r=9}
+  - potion{type=CONFUSION;lvl=1;duration=120} @PlayersInRadius{r=9}
+  - effect:particles{p=witch;amount=160;hSpread=6;ySpread=1;speed=0;yOffset=0.7} @Self
+
+WildCurseDebt:
+  Cooldown: 7
+  Skills:
+  - damage{amount=5;ignorearmor=true} @target
+  - potion{type=WITHER;lvl=1;duration=70} @target
+
+WildWitchRetreat:
+  Cooldown: 16
+  Skills:
+  - potion{type=SPEED;lvl=2;duration=80} @Self
+  - heal{amount=10} @Self
+  - summon{mob=WildVenomSpider;amount=1;noise=5} @Self
+
+WildStalkerPunish:
+  Cooldown: 4
+  Skills:
+  - damage{amount=7;ignorearmor=true} @target
+  - potion{type=DARKNESS;lvl=1;duration=70} @target
+  - potion{type=SLOW_DIGGING;lvl=1;duration=80} @target
+
+WildVoidAnchor:
+  Cooldown: 9
+  Skills:
+  - potion{type=SLOW;lvl=2;duration=60}
+  - potion{type=WEAKNESS;lvl=1;duration=60}
+  - effect:particles{p=portal;amount=130;hSpread=4;ySpread=2;speed=0.05} @Self
