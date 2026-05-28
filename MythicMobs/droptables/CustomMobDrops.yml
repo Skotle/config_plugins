@@ -1,56 +1,116 @@
+WildFeralZombieDrops:
+  Drops:
+  - ROTTEN_FLESH 2-5 1
+  - IRON_NUGGET 1-4 0.45
+  - WildFang 1 0.20
+  - HunterTonic 1 0.025
+
+WildGraveSkeletonDrops:
+  Drops:
+  - BONE 2-5 1
+  - ARROW 2-7 0.75
+  - GraveDust 1 0.22
+  - MoonveilSalve 1 0.020
+
+WildVenomSpiderDrops:
+  Drops:
+  - STRING 2-4 1
+  - SPIDER_EYE 1-2 0.65
+  - VenomGland 1 0.24
+  - BurrowChitin 1 0.12
+
+WildAshCreeperDrops:
+  Drops:
+  - GUNPOWDER 2-5 1
+  - COAL 1-3 0.35
+  - AshenSulfur 1 0.24
+  - EmberWard 1 0.018
+
+WildHexWitchDrops:
+  Drops:
+  - GLOWSTONE_DUST 1-4 0.75
+  - REDSTONE 1-4 0.60
+  - HexIchor 1 0.28
+  - HunterTonic 1 0.025
+
+WildStalkerEndermanDrops:
+  Drops:
+  - ENDER_PEARL 1-2 0.80
+  - CHORUS_FRUIT 1-3 0.35
+  - VoidSplinter 1 0.28
+  - VoidAnchorRelic 1 0.018
+
 MossboundHuskDrops:
   Drops:
   - ROTTEN_FLESH 2-5 1
   - WHEAT_SEEDS 1-3 0.45
   - EMERALD 1 0.04
+  - MossSpore 1 0.26
+  - HunterTonic 1 0.020
 
 MoonlitStrayDrops:
   Drops:
   - BONE 2-4 1
   - ARROW 4-10 0.80
   - SPECTRAL_ARROW 1-3 0.18
+  - MoonShard 1 0.30
+  - MoonveilSalve 1 0.025
 
 BurrowSpiderDrops:
   Drops:
   - STRING 2-5 1
   - SPIDER_EYE 1-2 0.60
   - FERMENTED_SPIDER_EYE 1 0.08
+  - BurrowChitin 1 0.28
+  - VenomGland 1 0.18
 
 GrimCreeperDrops:
   Drops:
   - GUNPOWDER 3-7 1
   - COAL 1-4 0.35
   - TNT 1 0.05
+  - AshenSulfur 1 0.32
+  - EmberWard 1 0.018
 
 EmberImpDrops:
   Drops:
   - BLAZE_ROD 1-2 0.65
   - BLAZE_POWDER 2-5 1
   - FIRE_CHARGE 1-3 0.25
+  - CinderShard 1 0.34
+  - EmberWard 1 0.020
 
 AshenBruteDrops:
   Drops:
   - GOLD_NUGGET 8-18 1
   - GOLD_INGOT 1-3 0.45
   - NETHERITE_SCRAP 1 0.02
+  - BruteSigil 1 0.35
+  - WarlordStandard 1 0.012
 
 MoltenSlimeDrops:
   Drops:
   - MAGMA_CREAM 2-5 1
   - BASALT 2-8 0.60
   - LAVA_BUCKET 1 0.03
+  - MoltenCore 1 0.35
+  - CinderShard 1 0.24
 
 VoidWatcherDrops:
   Drops:
   - ENDER_PEARL 1-3 0.85
   - CHORUS_FRUIT 1-4 0.35
   - ECHO_SHARD 1 0.03
+  - VoidSplinter 1 0.35
+  - VoidAnchorRelic 1 0.020
 
 EnderBulwarkDrops:
   Drops:
   - SHULKER_SHELL 1-2 0.60
   - END_STONE 4-12 1
   - DRAGON_BREATH 1 0.05
+  - BulwarkPlate 1 0.30
+  - VoidAnchorRelic 1 0.025
 
 DreadWarlordDrops:
   Drops:
@@ -59,6 +119,10 @@ DreadWarlordDrops:
   - DIAMOND 1-2 0.20
   - NETHERITE_SCRAP 1 0.04
   - TOTEM_OF_UNDYING 1 0.01
+  - WarlordCrest 1 1
+  - WildFang 3-6 1
+  - GraveDust 2-5 0.75
+  - WarlordStandard 1 0.040
 
 PlagueRevenantDrops:
   Drops:
@@ -68,6 +132,9 @@ PlagueRevenantDrops:
   - ECHO_SHARD 1 0.05
   - TOTEM_OF_UNDYING 1 0.008
   - PlagueWardenCharm 1 0.035
+  - PlagueCrest 1 1
+  - MossSpore 4-8 1
+  - HexIchor 2-5 0.60
 
 CinderColossusDrops:
   Drops:
@@ -77,6 +144,9 @@ CinderColossusDrops:
   - ANCIENT_DEBRIS 1 0.025
   - TOTEM_OF_UNDYING 1 0.006
   - CinderDashBlade 1 0.030
+  - CinderCrest 1 1
+  - CinderShard 5-9 1
+  - MoltenCore 2-4 0.75
 
 VoidHarbingerDrops:
   Drops:
@@ -86,6 +156,9 @@ VoidHarbingerDrops:
   - DRAGON_BREATH 1 0.05
   - SHULKER_SHELL 1 0.025
   - VoidstepPearl 1 0.035
+  - VoidCrest 1 1
+  - VoidSplinter 5-9 1
+  - BulwarkPlate 1-2 0.50
 
 GraveboundTitanDrops:
   Drops:
@@ -96,3 +169,6 @@ GraveboundTitanDrops:
   - TOTEM_OF_UNDYING 1 0.01
   - GravehookAxe 1 0.030
   - StormAegis 1 0.020
+  - TitanCrest 1 1
+  - GraveDust 6-10 1
+  - TitanHeart 1 0.025

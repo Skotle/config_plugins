@@ -1,7 +1,7 @@
 WildFeralZombieSpawn:
   Type: WildFeralZombie
   Worlds: world
-  Chance: 0.085
+  Chance: 0.035
   Priority: 10
   Action: REPLACE
   Conditions:
@@ -12,7 +12,7 @@ WildFeralZombieSpawn:
 WildGraveSkeletonSpawn:
   Type: WildGraveSkeleton
   Worlds: world
-  Chance: 0.075
+  Chance: 0.030
   Priority: 10
   Action: REPLACE
   Conditions:
@@ -23,7 +23,7 @@ WildGraveSkeletonSpawn:
 WildVenomSpiderSpawn:
   Type: WildVenomSpider
   Worlds: world
-  Chance: 0.060
+  Chance: 0.025
   Priority: 10
   Action: REPLACE
   Conditions:
@@ -34,7 +34,7 @@ WildVenomSpiderSpawn:
 WildAshCreeperSpawn:
   Type: WildAshCreeper
   Worlds: world
-  Chance: 0.045
+  Chance: 0.015
   Priority: 10
   Action: REPLACE
   Conditions:
@@ -45,7 +45,7 @@ WildAshCreeperSpawn:
 WildHexWitchSpawn:
   Type: WildHexWitch
   Worlds: world
-  Chance: 0.028
+  Chance: 0.008
   Priority: 10
   Action: REPLACE
   Conditions:
@@ -56,7 +56,7 @@ WildHexWitchSpawn:
 WildStalkerEndermanSpawn:
   Type: WildStalkerEnderman
   Worlds: world
-  Chance: 0.020
+  Chance: 0.006
   Priority: 10
   Action: REPLACE
   Conditions:

@@ -147,8 +147,8 @@ EnderBulwark:
 DreadWarlord:
   Type: ZOMBIE
   Display: '&4Dread Warlord'
-  Health: 220
-  Damage: 18
+  Health: 136
+  Damage: 15
   Drops:
   - DreadWarlordDrops
   Equipment:
@@ -158,7 +158,7 @@ DreadWarlord:
   - NETHERITE_LEGGINGS LEGS
   - NETHERITE_BOOTS FEET
   Options:
-    MovementSpeed: 0.36
+    MovementSpeed: 0.22
     FollowRange: 56
     KnockbackResistance: 0.80
     PreventOtherDrops: false
@@ -173,8 +173,8 @@ DreadWarlord:
 PlagueRevenant:
   Type: HUSK
   Display: '&2Plague Revenant'
-  Health: 280
-  Damage: 20
+  Health: 164
+  Damage: 16
   Drops:
   - PlagueRevenantDrops
   Equipment:
@@ -184,7 +184,7 @@ PlagueRevenant:
   - CHAINMAIL_LEGGINGS LEGS
   - IRON_BOOTS FEET
   Options:
-    MovementSpeed: 0.34
+    MovementSpeed: 0.21
     FollowRange: 58
     KnockbackResistance: 0.85
     PreventOtherDrops: false
@@ -199,8 +199,8 @@ PlagueRevenant:
 CinderColossus:
   Type: PIGLIN_BRUTE
   Display: '&cCinder Colossus'
-  Health: 340
-  Damage: 24
+  Health: 192
+  Damage: 18
   Drops:
   - CinderColossusDrops
   Equipment:
@@ -210,7 +210,7 @@ CinderColossus:
   - GOLDEN_LEGGINGS LEGS
   - NETHERITE_BOOTS FEET
   Options:
-    MovementSpeed: 0.31
+    MovementSpeed: 0.20
     FollowRange: 54
     KnockbackResistance: 0.95
     PreventOtherDrops: false
@@ -224,12 +224,12 @@ CinderColossus:
 VoidHarbinger:
   Type: ENDERMAN
   Display: '&5Void Harbinger'
-  Health: 300
-  Damage: 22
+  Health: 180
+  Damage: 17
   Drops:
   - VoidHarbingerDrops
   Options:
-    MovementSpeed: 0.40
+    MovementSpeed: 0.24
     FollowRange: 64
     KnockbackResistance: 0.80
     PreventOtherDrops: false
@@ -243,8 +243,8 @@ VoidHarbinger:
 GraveboundTitan:
   Type: ZOMBIE
   Display: '&8Gravebound Titan'
-  Health: 420
-  Damage: 26
+  Health: 228
+  Damage: 19
   Drops:
   - GraveboundTitanDrops
   Equipment:
@@ -254,7 +254,7 @@ GraveboundTitan:
   - DIAMOND_LEGGINGS LEGS
   - DIAMOND_BOOTS FEET
   Options:
-    MovementSpeed: 0.28
+    MovementSpeed: 0.18
     FollowRange: 60
     KnockbackResistance: 1.0
     PreventOtherDrops: false

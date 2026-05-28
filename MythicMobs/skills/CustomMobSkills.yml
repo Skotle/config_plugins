@@ -96,12 +96,10 @@ BulwarkCurse:
 DreadWarlordSpawn:
   Cooldown: 1
   Skills:
-  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=200} @self
   - potion{type=INCREASE_DAMAGE;lvl=1;duration=999999} @self
-  - potion{type=SPEED;lvl=1;duration=999999} @self
-  - summon{mob=WildFeralZombie;amount=2;noise=5} @self
+  - summon{mob=WildFeralZombie;amount=1;noise=5} @self
   - summon{mob=WildGraveSkeleton;amount=1;noise=6} @self
-  - summon{mob=WildVenomSpider;amount=1;noise=6} @self
   - effect:sound{s=entity.wither.spawn;volume=0.7;pitch=0.8} @self
   - effect:particles{p=large_smoke;amount=140;hSpread=4;ySpread=2;speed=0.02} @self
 
@@ -109,7 +107,6 @@ DreadWarlordGuard:
   Cooldown: 18
   Skills:
   - summon{mob=WildFeralZombie;amount=1;noise=5} @self
-  - summon{mob=WildGraveSkeleton;amount=1;noise=6} @self
   - effect:particles{p=angryVillager;amount=45;hSpread=2;ySpread=1;speed=0} @self
 
 DreadWarlordCleave:
@@ -131,9 +128,8 @@ DreadWarlordRally:
 PlagueRevenantSpawn:
   Cooldown: 1
   Skills:
-  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
-  - potion{type=SPEED;lvl=1;duration=999999} @self
-  - summon{mob=WildFeralZombie;amount=2;noise=7} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=200} @self
+  - summon{mob=WildFeralZombie;amount=1;noise=7} @self
   - summon{mob=MossboundHusk;amount=1;noise=8} @self
   - effect:sound{s=entity.zombie_villager.cure;volume=0.9;pitch=0.45} @self
   - effect:particles{p=spore_blossom_air;amount=160;hSpread=5;ySpread=2;speed=0.02} @self
@@ -156,7 +152,7 @@ PlagueRend:
 PlagueRaiseDead:
   Cooldown: 18
   Skills:
-  - summon{mob=WildFeralZombie;amount=2;noise=7} @self
+  - summon{mob=WildFeralZombie;amount=1;noise=7} @self
   - heal{amount=12} @self
   - effect:sound{s=entity.zombie_villager.ambient;volume=1.1;pitch=0.6} @self
 
@@ -164,9 +160,9 @@ CinderColossusSpawn:
   Cooldown: 1
   Skills:
   - potion{type=FIRE_RESISTANCE;lvl=1;duration=999999} @self
-  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=200} @self
   - potion{type=INCREASE_DAMAGE;lvl=1;duration=999999} @self
-  - summon{mob=EmberImp;amount=2;noise=8} @self
+  - summon{mob=EmberImp;amount=1;noise=8} @self
   - effect:sound{s=entity.blaze.shoot;volume=1.2;pitch=0.55} @self
   - effect:particles{p=lava;amount=90;hSpread=5;ySpread=2;speed=0} @self
 
@@ -196,9 +192,8 @@ CinderFury:
 VoidHarbingerSpawn:
   Cooldown: 1
   Skills:
-  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=999999} @self
-  - potion{type=SPEED;lvl=2;duration=999999} @self
-  - summon{mob=VoidWatcher;amount=2;noise=8} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=200} @self
+  - summon{mob=VoidWatcher;amount=1;noise=8} @self
   - effect:sound{s=entity.enderman.scream;volume=1.0;pitch=0.6} @self
   - effect:particles{p=portal;amount=220;hSpread=6;ySpread=3;speed=0.08} @self
 
@@ -228,10 +223,10 @@ VoidSummonWatchers:
 GraveboundTitanSpawn:
   Cooldown: 1
   Skills:
-  - potion{type=DAMAGE_RESISTANCE;lvl=3;duration=999999} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=240} @self
   - potion{type=INCREASE_DAMAGE;lvl=1;duration=999999} @self
-  - summon{mob=WildGraveSkeleton;amount=2;noise=8} @self
-  - summon{mob=WildFeralZombie;amount=2;noise=8} @self
+  - summon{mob=WildGraveSkeleton;amount=1;noise=8} @self
+  - summon{mob=WildFeralZombie;amount=1;noise=8} @self
   - effect:sound{s=entity.warden.roar;volume=0.8;pitch=0.55} @self
   - effect:particles{p=large_smoke;amount=220;hSpread=6;ySpread=3;speed=0.02} @self
 

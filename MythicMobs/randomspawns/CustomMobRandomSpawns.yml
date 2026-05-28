@@ -1,7 +1,7 @@
 MossboundHuskSpawn:
   Type: MossboundHusk
   Worlds: world
-  Chance: 0.018
+  Chance: 0.008
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -13,7 +13,7 @@ MossboundHuskSpawn:
 MoonlitStraySpawn:
   Type: MoonlitStray
   Worlds: world
-  Chance: 0.016
+  Chance: 0.007
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -25,7 +25,7 @@ MoonlitStraySpawn:
 BurrowSpiderSpawn:
   Type: BurrowSpider
   Worlds: world
-  Chance: 0.014
+  Chance: 0.006
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -36,7 +36,7 @@ BurrowSpiderSpawn:
 GrimCreeperSpawn:
   Type: GrimCreeper
   Worlds: world
-  Chance: 0.010
+  Chance: 0.004
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -47,7 +47,7 @@ GrimCreeperSpawn:
 EmberImpSpawn:
   Type: EmberImp
   Worlds: world_nether
-  Chance: 0.030
+  Chance: 0.012
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -57,7 +57,7 @@ EmberImpSpawn:
 AshenBruteSpawn:
   Type: AshenBrute
   Worlds: world_nether
-  Chance: 0.016
+  Chance: 0.006
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -67,7 +67,7 @@ AshenBruteSpawn:
 MoltenSlimeSpawn:
   Type: MoltenSlime
   Worlds: world_nether
-  Chance: 0.022
+  Chance: 0.008
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -77,7 +77,7 @@ MoltenSlimeSpawn:
 VoidWatcherSpawn:
   Type: VoidWatcher
   Worlds: world_the_end
-  Chance: 0.030
+  Chance: 0.012
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -86,7 +86,7 @@ VoidWatcherSpawn:
 EnderBulwarkSpawn:
   Type: EnderBulwark
   Worlds: world_the_end
-  Chance: 0.015
+  Chance: 0.005
   Priority: 20
   Action: REPLACE
   Conditions:
@@ -95,7 +95,7 @@ EnderBulwarkSpawn:
 DreadWarlordRandomSpawn:
   Type: DreadWarlord
   Worlds: world
-  Chance: 0.001
+  Chance: 0.00025
   Priority: 40
   Action: REPLACE
   Conditions:
@@ -106,7 +106,7 @@ DreadWarlordRandomSpawn:
 PlagueRevenantRandomSpawn:
   Type: PlagueRevenant
   Worlds: world
-  Chance: 0.0006
+  Chance: 0.00012
   Priority: 50
   Action: REPLACE
   Conditions:
@@ -118,7 +118,7 @@ PlagueRevenantRandomSpawn:
 GraveboundTitanRandomSpawn:
   Type: GraveboundTitan
   Worlds: world
-  Chance: 0.0004
+  Chance: 0.00008
   Priority: 50
   Action: REPLACE
   Conditions:
@@ -130,7 +130,7 @@ GraveboundTitanRandomSpawn:
 CinderColossusRandomSpawn:
   Type: CinderColossus
   Worlds: world_nether
-  Chance: 0.0005
+  Chance: 0.00010
   Priority: 50
   Action: REPLACE
   Conditions:
@@ -140,7 +140,7 @@ CinderColossusRandomSpawn:
 VoidHarbingerRandomSpawn:
   Type: VoidHarbinger
   Worlds: world_the_end
-  Chance: 0.0005
+  Chance: 0.00010
   Priority: 50
   Action: REPLACE
   Conditions:

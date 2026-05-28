@@ -3,6 +3,8 @@ WildFeralZombie:
   Display: '&2Starved Feral Zombie'
   Health: 58
   Damage: 10
+  Drops:
+  - WildFeralZombieDrops
   Equipment:
   - IRON_SWORD HAND
   - CHAINMAIL_CHESTPLATE CHEST
@@ -23,6 +25,8 @@ WildGraveSkeleton:
   Display: '&7Grave Marksman'
   Health: 46
   Damage: 11
+  Drops:
+  - WildGraveSkeletonDrops
   Equipment:
   - BOW HAND
   - CHAINMAIL_HELMET HEAD
@@ -43,6 +47,8 @@ WildVenomSpider:
   Display: '&aVenom Spider'
   Health: 44
   Damage: 9
+  Drops:
+  - WildVenomSpiderDrops
   Options:
     MovementSpeed: 0.43
     FollowRange: 38
@@ -59,6 +65,8 @@ WildAshCreeper:
   Display: '&8Ash Creeper'
   Health: 44
   Damage: 14
+  Drops:
+  - WildAshCreeperDrops
   Options:
     MovementSpeed: 0.33
     FollowRange: 30
@@ -73,6 +81,8 @@ WildHexWitch:
   Display: '&5Hex Matron'
   Health: 66
   Damage: 8
+  Drops:
+  - WildHexWitchDrops
   Options:
     MovementSpeed: 0.28
     FollowRange: 44
@@ -89,6 +99,8 @@ WildStalkerEnderman:
   Display: '&5Stalker Enderman'
   Health: 82
   Damage: 15
+  Drops:
+  - WildStalkerEndermanDrops
   Options:
     MovementSpeed: 0.38
     FollowRange: 58

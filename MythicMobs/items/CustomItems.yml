@@ -75,3 +75,202 @@ PlagueWardenCharm:
   - ENCHANTS
   Skills:
   - skill{s=PlayerPlagueWard} @self ~onUse
+
+WildFang:
+  Id: PRISMARINE_SHARD
+  Display: '&2Wild Fang'
+  Lore:
+  - '&7A chipped trophy from hardened wild mobs.'
+  - '&8Used as a hunter trade material.'
+
+GraveDust:
+  Id: GUNPOWDER
+  Display: '&7Grave Dust'
+  Lore:
+  - '&7Cold powder gathered from restless dead.'
+  - '&8Used as a grave trade material.'
+
+VenomGland:
+  Id: SPIDER_EYE
+  Display: '&aVenom Gland'
+  Lore:
+  - '&7A pulsing gland from a toxic crawler.'
+  - '&8Used as an alchemy trade material.'
+
+AshenSulfur:
+  Id: GLOWSTONE_DUST
+  Display: '&8Ashen Sulfur'
+  Lore:
+  - '&7A bitter residue left by volatile monsters.'
+  - '&8Used as an explosive trade material.'
+
+HexIchor:
+  Id: PURPLE_DYE
+  Display: '&5Hex Ichor'
+  Lore:
+  - '&7A cursed reagent from witchcraft.'
+  - '&8Used as a ritual trade material.'
+
+VoidSplinter:
+  Id: AMETHYST_SHARD
+  Display: '&5Void Splinter'
+  Lore:
+  - '&7A sharp fragment that hums with distance.'
+  - '&8Used as an ender trade material.'
+
+MossSpore:
+  Id: GREEN_DYE
+  Display: '&2Moss Spore'
+  Lore:
+  - '&7A hardy spore from desert husks.'
+  - '&8Used as a survival trade material.'
+
+MoonShard:
+  Id: QUARTZ
+  Display: '&bMoon Shard'
+  Lore:
+  - '&7A pale shard that glows under cold skies.'
+  - '&8Used as a ranged trade material.'
+
+BurrowChitin:
+  Id: TURTLE_SCUTE
+  Display: '&6Burrow Chitin'
+  Lore:
+  - '&7A tough plate from a tunneling spider.'
+  - '&8Used as a light armor trade material.'
+
+CinderShard:
+  Id: BLAZE_POWDER
+  Display: '&cCinder Shard'
+  Lore:
+  - '&7A hot fragment from nether creatures.'
+  - '&8Used as a forge trade material.'
+
+BruteSigil:
+  Id: GOLD_NUGGET
+  Display: '&4Brute Sigil'
+  Lore:
+  - '&7A stamped mark carried by ashen brutes.'
+  - '&8Used as a combat trade material.'
+
+MoltenCore:
+  Id: MAGMA_CREAM
+  Display: '&6Molten Core'
+  Lore:
+  - '&7A dense core that still radiates heat.'
+  - '&8Used as a forge trade material.'
+
+BulwarkPlate:
+  Id: SHULKER_SHELL
+  Display: '&dBulwark Plate'
+  Lore:
+  - '&7A reinforced shell plate from an end bulwark.'
+  - '&8Used as a defensive trade material.'
+
+HunterTonic:
+  Id: HONEY_BOTTLE
+  Display: '&6Hunter Tonic'
+  Lore:
+  - '&7Right-click for a short hunt boost.'
+  - '&8Cooldown: 40s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerHunterTonic} @self ~onUse
+
+MoonveilSalve:
+  Id: RABBIT_STEW
+  Display: '&bMoonveil Salve'
+  Lore:
+  - '&7Right-click to steady yourself in the dark.'
+  - '&8Cooldown: 45s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerMoonveilSalve} @self ~onUse
+
+EmberWard:
+  Id: FIRE_CHARGE
+  Display: '&cEmber Ward'
+  Lore:
+  - '&7Right-click to resist flame and burn nearby mobs.'
+  - '&8Cooldown: 48s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerEmberWard} @self ~onUse
+
+VoidAnchorRelic:
+  Id: ENDER_EYE
+  Display: '&5Void Anchor Relic'
+  Lore:
+  - '&7Right-click to slow and weaken nearby mobs.'
+  - '&8Cooldown: 52s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerVoidAnchorRelic} @self ~onUse
+
+WarlordStandard:
+  Id: BLACK_BANNER
+  Display: '&4Warlord Standard'
+  Lore:
+  - '&7Right-click to rally yourself for a short fight.'
+  - '&8Cooldown: 60s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerWarlordStandard} @self ~onUse
+
+TitanHeart:
+  Id: HEART_OF_THE_SEA
+  Display: '&8Titan Heart'
+  Lore:
+  - '&7Right-click to become briefly unshakable.'
+  - '&8Cooldown: 75s'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill{s=PlayerTitanHeart} @self ~onUse
+
+WarlordCrest:
+  Id: PAPER
+  Display: '&4Warlord Crest'
+  Lore:
+  - '&7Proof that a Dread Warlord fell.'
+
+PlagueCrest:
+  Id: PAPER
+  Display: '&2Plague Crest'
+  Lore:
+  - '&7Proof that a Plague Revenant fell.'
+
+CinderCrest:
+  Id: PAPER
+  Display: '&cCinder Crest'
+  Lore:
+  - '&7Proof that a Cinder Colossus fell.'
+
+VoidCrest:
+  Id: PAPER
+  Display: '&5Void Crest'
+  Lore:
+  - '&7Proof that a Void Harbinger fell.'
+
+TitanCrest:
+  Id: PAPER
+  Display: '&8Titan Crest'
+  Lore:
+  - '&7Proof that a Gravebound Titan fell.'
