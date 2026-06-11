@@ -1,0 +1,65 @@
+WildFeralZombieSpawn:
+  Type: WildFeralZombie
+  Worlds: world
+  Chance: 0.035
+  Priority: 10
+  Action: REPLACE
+  Conditions:
+  - night true
+  - lightlevel{l=0-7} true
+  - biome{b=mushroom_fields,deep_dark,river,frozen_river,beach,snowy_beach,stony_shore,ocean,deep_ocean,cold_ocean,deep_cold_ocean,frozen_ocean,deep_frozen_ocean,lukewarm_ocean,deep_lukewarm_ocean,warm_ocean} false
+
+WildGraveSkeletonSpawn:
+  Type: WildGraveSkeleton
+  Worlds: world
+  Chance: 0.030
+  Priority: 10
+  Action: REPLACE
+  Conditions:
+  - night true
+  - lightlevel{l=0-7} true
+  - biome{b=mushroom_fields,deep_dark,river,frozen_river,beach,snowy_beach,stony_shore,ocean,deep_ocean,cold_ocean,deep_cold_ocean,frozen_ocean,deep_frozen_ocean,lukewarm_ocean,deep_lukewarm_ocean,warm_ocean} false
+
+WildVenomSpiderSpawn:
+  Type: WildVenomSpider
+  Worlds: world
+  Chance: 0.025
+  Priority: 10
+  Action: REPLACE
+  Conditions:
+  - night true
+  - lightlevel{l=0-7} true
+  - biome{b=mushroom_fields,deep_dark,river,frozen_river,beach,snowy_beach,stony_shore,ocean,deep_ocean,cold_ocean,deep_cold_ocean,frozen_ocean,deep_frozen_ocean,lukewarm_ocean,deep_lukewarm_ocean,warm_ocean} false
+
+WildAshCreeperSpawn:
+  Type: WildAshCreeper
+  Worlds: world
+  Chance: 0.015
+  Priority: 10
+  Action: REPLACE
+  Conditions:
+  - night true
+  - lightlevel{l=0-7} true
+  - biome{b=mushroom_fields,deep_dark,river,frozen_river,beach,snowy_beach,stony_shore,ocean,deep_ocean,cold_ocean,deep_cold_ocean,frozen_ocean,deep_frozen_ocean,lukewarm_ocean,deep_lukewarm_ocean,warm_ocean} false
+
+WildHexWitchSpawn:
+  Type: WildHexWitch
+  Worlds: world
+  Chance: 0.008
+  Priority: 10
+  Action: REPLACE
+  Conditions:
+  - night true
+  - lightlevel{l=0-7} true
+  - biome{b=mushroom_fields,deep_dark,river,frozen_river,beach,snowy_beach,stony_shore,ocean,deep_ocean,cold_ocean,deep_cold_ocean,frozen_ocean,deep_frozen_ocean,lukewarm_ocean,deep_lukewarm_ocean,warm_ocean} false
+
+WildStalkerEndermanSpawn:
+  Type: WildStalkerEnderman
+  Worlds: world
+  Chance: 0.006
+  Priority: 10
+  Action: REPLACE
+  Conditions:
+  - night true
+  - lightlevel{l=0-7} true
+  - biome{b=mushroom_fields,deep_dark,river,frozen_river,beach,snowy_beach,stony_shore,ocean,deep_ocean,cold_ocean,deep_cold_ocean,frozen_ocean,deep_frozen_ocean,lukewarm_ocean,deep_lukewarm_ocean,warm_ocean} false

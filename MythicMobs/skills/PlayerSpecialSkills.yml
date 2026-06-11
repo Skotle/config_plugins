@@ -1,0 +1,104 @@
+PlayerAegisPulse:
+  Cooldown: 28
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=120} @self
+  - potion{type=ABSORPTION;lvl=2;duration=160} @self
+  - potion{type=REGENERATION;lvl=1;duration=80} @self
+  - effect:sound{s=item.shield.block;volume=1.0;pitch=0.7} @self
+  - effect:particles{p=totem;amount=90;hSpread=2;ySpread=1;speed=0.02} @self
+
+PlayerCinderStep:
+  Cooldown: 22
+  Skills:
+  - potion{type=SPEED;lvl=2;duration=100} @self
+  - potion{type=FIRE_RESISTANCE;lvl=1;duration=180} @self
+  - ignite{ticks=80} @MobsInRadius{r=5}
+  - damage{amount=5;ignorearmor=false} @MobsInRadius{r=5}
+  - effect:sound{s=entity.blaze.shoot;volume=0.8;pitch=1.2} @self
+  - effect:particles{p=flame;amount=120;hSpread=3;ySpread=1;speed=0.05} @self
+
+PlayerGraveHook:
+  Cooldown: 18
+  Skills:
+  - damage{amount=9;ignorearmor=true} @target
+  - potion{type=SLOW;lvl=3;duration=70} @target
+  - potion{type=WEAKNESS;lvl=1;duration=90} @target
+  - effect:sound{s=entity.wither_skeleton.hurt;volume=0.9;pitch=0.8} @self
+  - effect:particles{p=soul;amount=80;hSpread=1;ySpread=1;speed=0.02} @target
+
+PlayerVoidFlash:
+  Cooldown: 34
+  Skills:
+  - potion{type=SPEED;lvl=3;duration=80} @self
+  - potion{type=INVISIBILITY;lvl=1;duration=60} @self
+  - damage{amount=6;ignorearmor=true} @MobsInRadius{r=6}
+  - potion{type=DARKNESS;lvl=1;duration=70} @MobsInRadius{r=6}
+  - effect:sound{s=entity.enderman.teleport;volume=1.0;pitch=1.2} @self
+  - effect:particles{p=portal;amount=180;hSpread=4;ySpread=2;speed=0.08} @self
+
+PlayerPlagueWard:
+  Cooldown: 26
+  Skills:
+  - potion{type=REGENERATION;lvl=2;duration=90} @self
+  - potion{type=SATURATION;lvl=1;duration=20} @self
+  - potion{type=POISON;lvl=1;duration=80} @MobsInRadius{r=5}
+  - potion{type=SLOW;lvl=1;duration=80} @MobsInRadius{r=5}
+  - effect:sound{s=block.beacon.activate;volume=0.7;pitch=0.8} @self
+  - effect:particles{p=happyVillager;amount=80;hSpread=3;ySpread=1;speed=0.01} @self
+
+PlayerHunterTonic:
+  Cooldown: 40
+  Skills:
+  - potion{type=SPEED;lvl=1;duration=120} @self
+  - potion{type=REGENERATION;lvl=1;duration=80} @self
+  - potion{type=NIGHT_VISION;lvl=1;duration=240} @self
+  - effect:sound{s=entity.player.burp;volume=0.7;pitch=1.2} @self
+  - effect:particles{p=crit;amount=60;hSpread=2;ySpread=1;speed=0.08} @self
+
+PlayerMoonveilSalve:
+  Cooldown: 45
+  Skills:
+  - potion{type=ABSORPTION;lvl=1;duration=160} @self
+  - potion{type=SLOW_FALLING;lvl=1;duration=120} @self
+  - potion{type=NIGHT_VISION;lvl=1;duration=300} @self
+  - effect:sound{s=block.amethyst_block.chime;volume=0.8;pitch=1.4} @self
+  - effect:particles{p=enchanted_hit;amount=80;hSpread=2;ySpread=1;speed=0.02} @self
+
+PlayerEmberWard:
+  Cooldown: 48
+  Skills:
+  - potion{type=FIRE_RESISTANCE;lvl=1;duration=220} @self
+  - potion{type=DAMAGE_RESISTANCE;lvl=1;duration=70} @self
+  - ignite{ticks=70} @MobsInRadius{r=4}
+  - damage{amount=3;ignorearmor=false} @MobsInRadius{r=4}
+  - effect:sound{s=item.firecharge.use;volume=0.8;pitch=0.9} @self
+  - effect:particles{p=flame;amount=100;hSpread=3;ySpread=1;speed=0.04} @self
+
+PlayerVoidAnchorRelic:
+  Cooldown: 52
+  Skills:
+  - potion{type=SLOW;lvl=3;duration=80} @MobsInRadius{r=6}
+  - potion{type=WEAKNESS;lvl=1;duration=90} @MobsInRadius{r=6}
+  - potion{type=DARKNESS;lvl=1;duration=60} @MobsInRadius{r=6}
+  - damage{amount=4;ignorearmor=true} @MobsInRadius{r=6}
+  - effect:sound{s=entity.enderman.teleport;volume=0.9;pitch=0.55} @self
+  - effect:particles{p=portal;amount=160;hSpread=4;ySpread=2;speed=0.06} @self
+
+PlayerWarlordStandard:
+  Cooldown: 60
+  Skills:
+  - potion{type=INCREASE_DAMAGE;lvl=1;duration=90} @self
+  - potion{type=ABSORPTION;lvl=1;duration=140} @self
+  - potion{type=WEAKNESS;lvl=1;duration=70} @MobsInRadius{r=5}
+  - effect:sound{s=event.raid.horn;volume=0.8;pitch=0.7} @self
+  - effect:particles{p=angryVillager;amount=80;hSpread=3;ySpread=1;speed=0} @self
+
+PlayerTitanHeart:
+  Cooldown: 75
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;lvl=2;duration=90} @self
+  - potion{type=ABSORPTION;lvl=2;duration=180} @self
+  - potion{type=SLOW;lvl=1;duration=80} @self
+  - potion{type=WEAKNESS;lvl=2;duration=100} @MobsInRadius{r=6}
+  - effect:sound{s=entity.warden.heartbeat;volume=0.9;pitch=0.7} @self
+  - effect:particles{p=soul;amount=120;hSpread=3;ySpread=2;speed=0.02} @self
